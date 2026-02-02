@@ -3,6 +3,7 @@ import { NormalDrugStrategy } from "./drug-strategies/normal-drug-strategy.js";
 import { HerbalTeaStrategy } from "./drug-strategies/herbal-tea-strategy.js";
 import { FervexStrategy } from "./drug-strategies/fervex-strategy.js";
 import { MagicPillStrategy } from "./drug-strategies/magic-pill-strategy.js";
+import { DafalganStrategy } from "./drug-strategies/dafalgan-strategy.js";
 
 /**
  * Factory class for creating drug strategies.
@@ -22,6 +23,7 @@ export class DrugStrategyFactory {
     this.strategies.set(DRUG_NAMES.HERBAL_TEA, new HerbalTeaStrategy());
     this.strategies.set(DRUG_NAMES.FERVEX, new FervexStrategy());
     this.strategies.set(DRUG_NAMES.MAGIC_PILL, new MagicPillStrategy());
+    this.strategies.set(DRUG_NAMES.DAFALGAN, new DafalganStrategy());
   }
 
   /**
